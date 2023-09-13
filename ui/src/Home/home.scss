@@ -1,0 +1,52 @@
+.homeLogo{
+    width: 600px;
+  //  margin-top: 7%;
+  //  margin-left: 60px;
+}
+.Hcontainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: absolute;
+    justify-content: space-around;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.leftside h4{
+  //  margin-top: 80px;
+    width: 660px;
+  //  margin-left: 80px;
+    //margin-top: 0px;
+}
+.leftside{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 80px;
+}
+a{
+    color:black;
+    transition: 0.5s;
+}
+a:hover{
+    color:rgb(117, 117, 224);
+}
+
+.become{
+    width: 120px;
+    height: 40px;
+    border: 2px solid;
+    background: #ffffff;
+    border-radius: 25px;
+    font-size: 13px;
+    color: #000000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: .5s;
+}
+
+
+.become:hover{
+    transform: scale(110%,110%);
+}
