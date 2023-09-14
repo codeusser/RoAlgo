@@ -1,7 +1,13 @@
+import { useNavigate } from 'react-router-dom'
 import './home.scss'
 
 
 export default function Home(){
+    const navigate = useNavigate();
+    function becomeMember(){
+    //    window.location.replace('https://codefrontend.com');
+       navigate('/member');
+    }
     return (
         <>
             <div className='Hcontainer'> 
@@ -19,7 +25,7 @@ export default function Home(){
                     
                     
                     </h4>
-                    <button className='become'> Devino membru </button>
+                    <button className='become' onClick={becomeMember}> Devino membru </button>
                 </div>
             </div>
         </>

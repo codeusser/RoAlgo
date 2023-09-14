@@ -1,0 +1,31 @@
+.discordLogo{
+    padding-top: 40px;
+    width: 300px;
+}
+
+.Membercontainer{
+    ///margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+  //  align-items: center;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    left: 50%;
+    border:1px solid black;  
+    transform: translate(-50%, -50%);
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 1px 20px 25px rgba(0,0,0,0.05);
+    padding-bottom: 50px;
+}
+.room{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.room h2{
+    padding-left: 30px;
+    width: 280px;
+}
