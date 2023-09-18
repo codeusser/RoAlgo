@@ -1,0 +1,35 @@
+.body{
+    //height: 100px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid black;
+    margin-left: 40px;
+    border-radius: 25px;
+    transition: .5s;
+    margin-bottom: 24px;
+}
+.body:hover{
+    border: 2px solid rgb(95, 162, 213);
+}
+
+.body h2{
+   padding: 0px;
+   margin-left:15px;
+}
+.center{
+    //osition: absolute;
+   // justify-content: center;
+    //left: 45%;
+    width: fit-content;
+   // border: 2px solid black;
+   // position:relative;
+    transform: translate(+500%, 0%);
+    padding-bottom: 30px;
+}
+.carduri{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,13 @@
+.App{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;;
+}
+.content-wrap{
+    flex:1;
+}
+@media screen and (max-width: 540px) {
+    .content-wrap{
+        margin-bottom: 500%;
+    }
+}

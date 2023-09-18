@@ -27,5 +27,125 @@
 }
 .room h2{
     padding-left: 30px;
+    margin-top: 40px;
     width: 280px;
+}
+
+.ButtonMember {
+    width: 160px;
+    height: 40px;
+    border: 1px solid black;
+    outline: none;
+    margin-top: 20px;
+    color: #000000;
+    background: #ffffff;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 12px;
+}
+
+.ButtonMember:before {
+    content: '';
+    background: linear-gradient(45deg,  #002bff, #0521ad, #4b69ff, #8294ec, #daa430, #e53f3f);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 12px;
+}
+
+.ButtonMember:active {
+    color: #ffffff
+}
+
+.ButtonMember:active:after {
+    background: transparent;
+}
+
+.ButtonMember:hover:before {
+    opacity: 1;
+}
+
+.ButtonMember:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.rightSide{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (max-width: 540px) {
+    .room{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .Membercontainer{
+        margin-top: 250px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 100px;
+        position: absolute;
+        justify-content: center;
+        top: 50%;
+        left: 50%;
+        border:1px solid black;  
+        transform: translate(-50%, -50%);
+        width: 500px;
+        
+        background: white;
+        border-radius: 10px;
+        box-shadow: 1px 20px 25px rgba(0,0,0,0.05);
+    }
+    .discordLogo{
+        padding-top: 40px;
+        width: 400px;
+    }
+    .room h2{
+        padding-left: 30px;
+        margin-top: 40px;
+        width: 380px;
+        align-items: center;
+        margin-left: 30px;
+        font-size: 40px;
+    }
+    .ButtonMember {
+        width: 260px;
+        height: 60px;
+        border: 1px solid black;
+        outline: none;
+        margin-top: 20px;
+        color: #000000;
+        background: #ffffff;
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        font-size: 25px;
+        border-radius: 12px;
+
+    }
 }
