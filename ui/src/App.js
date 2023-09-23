@@ -7,7 +7,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Member from './BecomeMember/member';
 import Footer from './footer/footer';
 import Anunturi from './Anunturi/anunuri';
-
+import Post from './Post/post';
 
 
 function App() {
@@ -21,6 +21,7 @@ function App() {
             <Route path="/home" element={<Home/>}></Route>
             <Route path='/member' element={<Member/>}></Route>
             <Route path='/anunturi' element={<Anunturi/>}></Route>
+            <Route path="/post" element={<Post/>}></Route>
         </Routes>
 
       </BrowserRouter>

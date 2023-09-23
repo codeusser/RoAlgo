@@ -1,12 +1,15 @@
 import React from 'react'
 import './anunturi.scss'
-
-
+import { useNavigate } from 'react-router-dom';
 
 function CardA(props){
+    const navigate = useNavigate();
+    function traverse(){
+        navigate(props.url)
+    }
     return (
         <>
-            <div className='body'>
+            <div className='body' onClick={traverse}>
                 <h2>{props.title}</h2>
                 <p>{props.date}</p>
             </div>
@@ -32,7 +35,7 @@ export default function Anunturi(){
             </div>
             {OnStire==false && 
                 <div className='carduri'>
-                    <CardA title="RoAlgo back to school" date="17/09/2022" ></CardA>
+                    <CardA title="RoAlgo back to school" date="17/09/2022" url="/post" ></CardA>
 
                 </div>
             }
