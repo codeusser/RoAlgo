@@ -11,7 +11,6 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
-      <Header/>
       <Routes>
         <Route path="/" element={<Home/>}></Route>
         <Route path="/post" element={<Post/>}></Route>
