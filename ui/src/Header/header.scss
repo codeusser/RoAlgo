@@ -11,6 +11,7 @@
 }
 .container{
     display: flex;
+    flex-direction: row;
     box-shadow: 1px 3px 5px rgb(169, 169, 169);
 }
 .container h3{
@@ -39,4 +40,26 @@ h3::after {
 h3:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
+}
+
+@media screen and (max-width: 540px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        width: fit-content;
+        box-shadow: 1px 3px 5px rgb(169, 169, 169);
+    }
+    .logo{
+        width: 140px;
+        margin-left: 10px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+        padding-right: 40px;
+        transition: 0.5s;
+    }
+    .container h3{
+        font-size: 20px;
+        margin-right: 60px;
+        margin-bottom: 20px;
+    }
 }

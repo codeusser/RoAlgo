@@ -50,3 +50,37 @@ a:hover{
 .become:hover{
     transform: scale(110%,110%);
 }
+
+
+@media screen and (max-width: 540px) {
+    .Hcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        justify-content: space-around;
+        top: 50%;
+        left: 50%;
+        transform: translate(-40%, -14%);
+    }
+    .leftside h4{
+        //  margin-top: 80px;
+          width: 560px;
+          font-size: 30px;
+        //  margin-left: 80px;
+          //margin-top: 0px;
+      }
+      .become{
+        width: 220px;
+        height: 70px;
+        border: 2px solid;
+        background: #ffffff;
+        border-radius: 25px;
+        font-size: 25px;
+        color: #000000;
+        font-weight: 700;
+        cursor: pointer;
+        margin-bottom: 40px;
+        transition: .5s;
+    }
+}

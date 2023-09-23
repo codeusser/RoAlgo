@@ -9,6 +9,7 @@
     "http-proxy-middleware": "^2.0.6",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-katex": "^3.0.1",
     "react-markdown": "^8.0.7",
     "react-router-dom": "^6.16.0",
@@ -18,6 +19,10 @@
     "rehype-raw": "^7.0.0",
     "remark-gfm": "^4.0.0",
     "remark-math": "^6.0.0",
+=======
+    "react-router-dom": "^6.16.0",
+    "react-scripts": "5.0.1",
+>>>>>>> aa510609ab3031377d901af84b87dfac0b0a0ff1
     "saas": "^1.0.0",
     "sass": "^1.66.1",
     "web-vitals": "^2.1.4"
