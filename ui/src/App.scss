@@ -1,7 +1,7 @@
 .App{
     display: flex;
     flex-direction: column;
-    min-height: 190vh;
+    min-height: 100vh;
     max-height: 300vh;
 }
 .content-wrap{
@@ -9,6 +9,6 @@
 }
 @media screen and (max-width: 540px) {
     .content-wrap{
-    //  margin-bottom: 100%;
+        min-height: 190vh;
     }
 }
