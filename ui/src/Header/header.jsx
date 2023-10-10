@@ -17,7 +17,7 @@ export default function Header(){
                 <img src='RoAlgoLogo.png' className='logo'></img>
                 <h3 onClick={GoToHome}>Acasa</h3>
                 <h3 onClick={GoToAnunturi}>Anunturi</h3>
-                <h3 onClick={GoToMember}>Devino membru</h3>
+                <h3 className="some" onClick={GoToMember}>Devino membru</h3>
             </div>
         </>
     )

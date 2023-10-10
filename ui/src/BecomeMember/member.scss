@@ -105,17 +105,19 @@
         align-items: center;
     }
     .Membercontainer{
-        margin-top: 250px;
+        margin-top: 150px;
         display: flex;
         flex-direction: column;
         margin-left: 100px;
         position: absolute;
         justify-content: center;
-        top: 50%;
-        left: 50%;
+        top: 30%;
+        right: 50%;
+        left: 25%;
+        right: 25%;
         border:1px solid black;  
-        transform: translate(-50%, -50%);
-        width: 500px;
+      //  transform: translate(-50%, -50%);
+        width: 300px;
         
         background: white;
         border-radius: 10px;
@@ -123,19 +125,21 @@
     }
     .discordLogo{
         padding-top: 40px;
-        width: 400px;
+        width: 200px;
     }
     .room h2{
-        padding-left: 30px;
+        padding-left: 0px;
+        padding-right: 10px;
         margin-top: 40px;
-        width: 380px;
+        width: 280px;
         align-items: center;
         margin-left: 30px;
-        font-size: 40px;
+        font-size: 20px;
+        text-align: center;
     }
     .ButtonMember {
-        width: 260px;
-        height: 60px;
+        width: 160px;
+        height: 40px;
         border: 1px solid black;
         outline: none;
         margin-top: 20px;
@@ -144,7 +148,7 @@
         cursor: pointer;
         position: relative;
         z-index: 0;
-        font-size: 25px;
+        font-size: 15px;
         border-radius: 12px;
 
     }

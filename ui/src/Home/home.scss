@@ -58,29 +58,50 @@ a:hover{
         flex-direction: column;
         align-items: center;
         position: absolute;
+        width: 400px;
         justify-content: space-around;
-        top: 50%;
-        left: 50%;
-        transform: translate(-40%, -14%);
+        top: 76%;
+        right: 70%;
+        text-align: center;
+        left: 40%;
+       // transform: translate(-55%, -30%);
     }
-    .leftside h4{
-        //  margin-top: 80px;
-          width: 560px;
-          font-size: 30px;
-        //  margin-left: 80px;
-          //margin-top: 0px;
+      .leftside h4{
+          width: 350px;
       }
       .become{
-        width: 220px;
-        height: 70px;
+        width: 110px;
+        height: 40px;
         border: 2px solid;
         background: #ffffff;
         border-radius: 25px;
-        font-size: 25px;
+        font-size: 11px;
         color: #000000;
         font-weight: 700;
         cursor: pointer;
         margin-bottom: 40px;
         transition: .5s;
+    }
+    .homeLogo{
+        margin-left: 50px;
+        width: 400px;
+      //  margin-top: 7%;
+      //  margin-left: 60px;
+    }
+}
+
+@media screen and (max-height:700px){
+    .Hcontainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        width: 400px;
+        justify-content: space-around;
+        top: 100%;
+        right: 70%;
+        text-align: center;
+        left: 40%;
+       // transform: translate(-55%, -30%);
     }
 }

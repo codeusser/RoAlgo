@@ -6,7 +6,7 @@ export default function Footer(){
         <>
             <div className='Fcontainer'>
                 <p>© RoAlgo 2023-2023 </p>
-                <p>Site dezvotat cu 🖤 de Nistor Vlad si Nelu</p>
+                <p>Site dezvotat cu 🖤 de Vlad Nistor si Curca David</p>
             </div>
         </>
     )
