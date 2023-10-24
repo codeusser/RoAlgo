@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    max-height: 300vh;
+    //max-height: 300vh;
 }
 .content-wrap{
    flex: 1;
 }
 @media screen and (max-width: 540px) {
     .content-wrap{
-        min-height: 190vh;
+        min-height: 140vh;
     }
 }

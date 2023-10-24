@@ -35,7 +35,7 @@ export default function Anunturi(){
             </div>
             {OnStire==false && 
                 <div className='carduri'>
-                    <CardA title="RoAlgo back to school" date="17/09/2022" url="/post" ></CardA>
+                    <CardA title="RoAlgo League Sezonul 2023-24" date="8/10/2023" url="/post" ></CardA>
 
                 </div>
             }

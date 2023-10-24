@@ -8,61 +8,72 @@ import rehypeRaw from 'rehype-raw'
 import './post.scss'
 import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
 
-const content = `The lift coefficient ($C_L$) is a dimensionless coefficient.
+const content = `
 
 <center>
 
-$$ 2x^2 + y^{2^2} = 1 $$
-
+# RoAlgo League
 </center>
 
-# Posuitque ausim rapidi instructa gutture et vulnera
+<center>
 
-## Cetera ira ferrove inpedientibus omnis triformis
+####  -- sezonul 2023-24 --
+</center>
 
-Lorem markdownum *frondescere amicitiae* lux ceperat a accipit montes
-quadripedes Astreus. Fidumque respiceret manibus visurus, cum etiam parva functa
-viri pretium sanguine, et Achivi, habeat. Harum vellet.
 
-## Erant gentis
 
-Haemoniam sed queri interque, Phoenix **Styga** me Pergama adversa animosque
-bracchia succincta iuro fecit; probant ad! Viribus nubibus primus: quam deorum,
-placido formam promptu quodcumque freta potuisse saxa illa.
+### Concursurile RoAlgo ce vor avea loc începând din octombrie 2023 și până în iunie 2024 vor conta pe lângă obiectivele principale (încurajarea participării la concursuri și lucratul de probleme, precum și propusul problemelor pentru aceste concursuri) și la un clasament cumulat ce va ține cont de rezultatele participanților la rundele ce vor avea loc de-a lungul acestei perioade.
 
-## Ille rudis silvas coloni
+#### Concursurile vor fi de 3 categorii, precizate în prealabil pe serverul RoAlgo în anunțul de dinaintea rundei. Concursurile vor avea toate 3-5 ore și vor conține 5-7 probleme, aceste informații fiind transmise înaintea începerii fiecărei runde. 
+> Se va putea obține pentru fiecare problemă un punctaj între 0 și 100 de puncte, punctele fiind împărțite pe subtaskuri, ca la olimpiadă. 
+  Pentru a obține punctele pe un subtask, toate testele din acea grupă trebuie rezolvate corect.<br/><br/>
+  Clasamentul final după fiecare rundă va fi stabilit de ordinea descrescătoare a punctajelor totale ale concurenților, concurenții plasați la egalitate fiind toți plasați pe același loc, obținând punctajul corespunzător acelui loc (dacă sunt 3 concurenți pe locul 4, vor fi punctați toți ca și cum ar fi fost plasați pe 4). 
+  În funcție de dificultatea percepută ca urmare a pregătirii și testării problemelor, rundele vor fi împărțite în mai multe categorii, cu sisteme diferite de punctare, după cum urmează: 
+  <br/><br/>
+  Runde de dificultate div. 1 - rundele cele mai grele, primii 30 de participanți clasați vor obține puncte, sistemul fiind acesta - locul din clasament fiind corespunzator cu punctajul obținut (locul 1 - 100p, locul 2 - 80p etc. până la locul 30 care obține 1 punct).
+  <br/><br/>
+Runde de dificultate div. 2 - rundele de o dificultate medie, primii 15 participanți clasați vor obține puncte, sistemul fiind acesta - locul din clasament fiind corespunzător cu punctajul obținut (locul 1 - 50p, locul 2 - 40p etc. până la locul 15 care obține 1 punct).
+  <br/><br/>
+Runde de dificultate div. 3 - rundele de o dificultate mică, primii 10 participanți clasați vor obține puncte, sistemul fiind acesta - locul din clasament fiind corespunzător cu punctajul obținut (locul 1 - 25p, locul 2 - 20p etc. până la locul 10 - 1 punct).
+    <br/><br/>
 
-Diu artes iam pressus, Peleus mediis regionibus nec ubi teque? Quae Phoebo
-fremida palmis, erat est vincula e inpete sensurum habentia partior laedi, et
-*gaudet* procul. Non cupit, ense una graves caedis; tum inpius lunae navalibus
-cyclopum cui cura quae manus.
+	
+Propunătorii și testerii de probleme vor primi puncte după cum urmează
+Autorii problemelor vor primi 1/3 din punctajul alocat câștigătorului rundei respective per problemă propusă, limitat la punctajul câștigătorului și rotunjit în sus. De exemplu, autorul a două probleme de la un concurs div. 2 va primi 34 de puncte (16.66 * 2).
+Testerii problemelor vor primi cel mult 1/3 din punctajul alocat câștigătorului rundei respective, în funcție de implicarea lor și de gradul în care au contribuit la îmbunătățirea rundei, dar nu mai puțin de min(5, 1/10) din punctajul câștigătorului.
+De asemenea, pe lângă aceste scoruri, se mai pot obține puncte după cum urmează:
+Obținerea unui scor nenul - 1 punct
+Obținerea punctajului maxim la o problemă - 1 punct/problemă
+Obținerea primului punctaj maxim la o problemă - 2 puncte
+Pentru a încuraja competiția în rândul juniorilor, va exista și un clasament separat pentru juniori, după cum urmează
 
-> Velamina in recenti ignotis [sacra quaesita](http://manus.io/percussit) velit
-> matre saxificos trepidant in et non cubitoque intellecta. Sua noctes collocat
-> pondere dum, [tollere est graves](http://livor.net/scireulla) Fames
-> contempsere nomen. Furit regia ultime, pro vidit si contra quaterque animam
-> Dardanio ira ingens fluitantia **funis in** agmina. Motu profundi caede
-> tellusque vocabitur et habet uterque molire, eadem molli **imagine morer**
-> amplius removit. Nomen sed quid semper cadunt.
+### La finalul fiecărei runde, primii 10 juniori clasați vor primi puncte astfel. Juniorii sunt participanti care sunt cel mult in clasa a VIII-a
 
-## Barbara esse
 
-Versa o inpune tempus! Mergor cava cupiens viribus, tota, blandis, nam idem
-gravitate saniemque. **Quodque** male congestaque auditurum, enim funera, cum
-Perrhaebum Diana intempestiva erat in quae. Undis concutit certa [contulerant
-nova](http://www.arcusudaeque.org/incautus-sollicitare) solio hippomene damno
-novo agnovit progenies figuras plaustra illa, per? Nulla bis; irata fetus
-falleret remittit carpe lanugine scelerique regem flammis.
 
-Ferarum diruerent; dies lacrimans sustinet superos damnatque secutum aequor!
-Audenti et crimine litore [qui](http://eratcornum.org/) exeat spatium oblitae
-verborum aetatis munere nivis qui et. Nec saltem medium micant; ille rami multos
-sit utque passim Atlantis ferox teneris?
+De asemenea, punctajele corespunzătoare obținerii unui punctaj nenul sau de 100 pe problemă se aplică și aici
 
-Testantur postquam sepulcro, mensuraque dabat, remittis fulgore. Piae crine et a
-arbore qua, baculisque quos ut superatus desierat Surrentino, publica veris
-cupit quotiensque sonum. Paternam seducunt iunctissima vocabat **frondes**
-cetera.
+Participarea la concursuri este individuală – nu se acceptă lucrul în echipă, schimbul de soluții sau orice altă formă de plagiat ce poate afecta rezultatul concurentului.
+
+La prima abatere, cei în culpă vor fi descalificați din concurs
+La a doua abatere, cei în culpă vor fi descalificați din campionat
+
+### La finalul seriilor de concursuri RoAlgo, următorii participanți vor primi premii constând în tricouri marca RoAlgo, în limita a 1 tricou / persoană. Pentru a obține aceste premii, participanții trebuie să completeze un Google form în care să menționeze userul lor de kilonova și userul lor de discord/altă metodă de contact. În caz contrar, premiile nu se vor acorda.
+
+>  a. Fiecare propunător de probleme (premiul se acordă după desfășurarea rundei)<br/><br/>
+   b. Primii 3 clasați de la fiecare rundă (premiul se acordă după desfășurarea rundei)<br/><br/>
+   c. Primii 15 clasați la finalul rundelor<br/><br/>
+   d. Primii 5 juniori la finalul rundelor care nu fac parte din top 15<br/><br/>
+
+
+### În funcție de cum va merge proiectul, poate exista și o rundă finală, cu desfășurare online sau fizică (TBD) la care vor putea participa următoarele persoane
+> a. Câștigătorii rundelor<br/><br/>
+  b. Primii 8 din clasamentul cumulat care nu au câștigat vreo rund<br/><br/>
+  c. Primii 4 juniori care nu se încadrează la categoria a sau b<br/><br/>
+  d. Primele 2 fete care nu se încadrează la categoriile a, b sau c<br/><br/>
+
+
+
 `
 
 export default function Post(){
