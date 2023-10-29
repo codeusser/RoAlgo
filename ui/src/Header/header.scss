@@ -18,6 +18,7 @@
 .container h3{
     margin-left: 2%;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 h3 {
     //left: 100%;
@@ -27,7 +28,7 @@ h3 {
     color: black;
 }
 
-h3::after {
+.container h3::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -40,7 +41,7 @@ h3::after {
     transition: transform 0.25s ease-out;
 }
 
-h3:hover::after {
+.container h3:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
