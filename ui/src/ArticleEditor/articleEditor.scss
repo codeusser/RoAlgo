@@ -1,0 +1,58 @@
+.Editor{
+    height: 65vh;
+    width: 40vw;
+}
+.Edit{
+   display: flex;
+   // flex-wrap: nowrap;
+   // flex-direction: column;
+}
+.container__lines {
+    border-right: 1px solid rgb(203 213 225);
+}
+
+.Edit h3{
+    top: 0;
+    margin-top: 0px;
+}
+.Edit textarea{
+  box-sizing: border-box;
+  border: 0px solid #efeeee;
+  border-radius: 7px;
+  background-color: #fdfdfd;
+  font-size: 16px;
+  resize: none;
+}
+.Edit textarea:focus{
+    outline: none;
+}
+.res{
+    width: 22px;
+    margin-top: 20px;
+    margin-left: 20px;
+    transition: 0.2s;
+}
+
+.res:hover{
+    width: 24px;
+}
+
+
+.files h4{
+    border: 1px solid black;
+}
+.prew{
+    margin-left:40px;
+}
+.line{
+    margin-top: 2vh;
+    height: 70vh;
+    width: 1px;
+    background-color: black;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vh;
+    padding: 1.5vh;
+}
