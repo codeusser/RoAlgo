@@ -11,14 +11,16 @@ export default function Header(){
     function GoToMember(){
         navigate('/member');
     }
+    function GoToArticle(){
+        navigate('/article');
+    }
     return (
         <>
             <div className='container'>
                 <img src='RoAlgoLogo.png' onClick={GoToHome} className='logo'></img>
                 <h3 onClick={GoToHome}>Acasa</h3>
                 <h3 onClick={GoToAnunturi}>Anunturi</h3>
-                {// <h3 onClick={GoToAnunturi}>Articole</h3>
-                }
+                <h3 onClick={GoToArticle}>Articole</h3>
                 <h3 className="some" onClick={GoToMember}>Devino membru</h3>
             </div>
         </>

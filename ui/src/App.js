@@ -9,6 +9,7 @@ import Footer from './footer/footer';
 import Anunturi from './Anunturi/anunuri';
 import Post from './Post/post';
 import ArticleEditor from './ArticleEditor/articleEditor';
+import Articole from './Articole/articole';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
             <Route path='/member' element={<Member/>}></Route>
             <Route path='/anunturi' element={<Anunturi/>}></Route>
             <Route path="/post" element={<Post/>}></Route>
+            <Route path='/article' element={<Articole/>}></Route> 
             <Route path="/roalgoeditor" element={<ArticleEditor/>}></Route>
         </Routes>
 

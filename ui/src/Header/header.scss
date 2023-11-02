@@ -1,9 +1,9 @@
 .logo{
     width: 100px;
-    margin-left: 90px;
+    margin-left: 4vw;
     margin-top: 6px;
     margin-bottom: 6px;
-    padding-right: 55%;
+    padding-right: 55vw;
     transition: 0.5s;
 }
 .logo:hover{
@@ -16,16 +16,18 @@
     box-shadow: 1px 3px 5px rgb(169, 169, 169);
 }
 .container h3{
-    margin-left: 2%;
+    margin-left: 1.5vw;
     margin-bottom: 20px;
     cursor: pointer;
 }
 h3 {
-    //left: 100%;
-   // right: 100%;
+
     display: inline-block;
     position: relative;
     color: black;
+}
+.some{
+    margin-right: 5vw;
 }
 
 .container h3::after {
@@ -60,7 +62,7 @@ h3 {
         margin-left: 10px;
         margin-top: 6px;
         margin-bottom: 6px;
-        padding-right: 40px;
+        padding-right: 2vw;
         transition: 0.5s;
     }
     .container h3{
