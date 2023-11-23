@@ -8,6 +8,7 @@ export default function Member(){
 
     return (
         <>
+            <div className="Center">
             <div className='Membercontainer'>
                 <div className='room'>
                     <img src="discord.png" className = 'discordLogo'/>
@@ -16,6 +17,7 @@ export default function Member(){
                         <button onClick = {redirectToDiscord} className='ButtonMember'>Devino membru</button>
                     </div>
                 </div>
+            </div>
             </div>
         </>
     )

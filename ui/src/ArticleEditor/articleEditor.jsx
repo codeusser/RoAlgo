@@ -8,7 +8,7 @@ import rehypeRaw from 'rehype-raw'
 
 import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
 
-
+/*
 document.addEventListener('DOMContentLoaded', () => {
     const textarea = document.getElementById('textarea');
     const lineNumbersEle = document.getElementById('line-numbers');
@@ -104,8 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-  //  displayLineNumbers();
-
+*/
 
 export default function ArticleEditor(args){
     const FILENAME = 'filename.md'

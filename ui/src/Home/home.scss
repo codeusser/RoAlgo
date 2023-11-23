@@ -3,27 +3,40 @@
   //  margin-top: 7%;
   //  margin-left: 60px;
 }
+
+.Center{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
 .Hcontainer{
     display: flex;
     flex-direction: row;
     align-items: center;
-    position: absolute;
+  //  position: relative;
+  //  margin-left: 15vw;
+    margin-top: 15vh;
     justify-content: space-around;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    //transform: translate(-50%, -50%);
 }
 .leftside h4{
-  //  margin-top: 80px;
+
     width: 660px;
-  //  margin-left: 80px;
-    //margin-top: 0px;
 }
 .leftside{
+    padding-right: 15vw;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-left: 80px;
+    padding-left:50px;
+}
+.homeLogo{
+    padding-left: 15vw;
+
 }
 a{
     color:black;
@@ -57,17 +70,22 @@ a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
-        width: 10vw;
+      //  position: relative;
+        //width: 10vw;
         justify-content: space-around;
-        top: 70%;
-        right: 100vw;
+        padding-top: 0vh;
+       // padding-bottom: 20px;
+        //right: 100vw;
         text-align: center;
-        left: 40vw;
+      //  margin-left: 45vw;
+      //  margin-right: 45vw;
        // transform: translate(-55%, -30%);
     }
       .leftside h4{
-          width: 78vw;
+        
+          width: 80vw;
+        //  margin-left: vw;
+          //margin-right: 45vw;
       }
       .become{
         width: 20vw;
@@ -80,28 +98,42 @@ a:hover{
         font-weight: 700;
         cursor: pointer;
         margin-bottom: 40px;
+        margin-left: 3vw;
+
         transition: .5s;
     }
     .homeLogo{
-        margin-left: 10vw;
-        width: 70vw;
-      //  margin-top: 7%;
-      //  margin-left: 60px;
+        margin-right: 20vw;
+        width: 80vw;
     }
 }
 
-@media screen and (max-height:700px){
+@media screen and (max-height:760px){
     .Hcontainer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        position: absolute;
-        width: 400px;
+        //position: absolute;
+        width: 300px;
         justify-content: space-around;
-        top: 100%;
-        right: 70%;
+       // top: 100%;
+        //right: 70%;
         text-align: center;
-        left: 40%;
-       // transform: translate(-55%, -30%);
+   
+    }
+    .leftside h4{
+        
+        width: 72vw;
+        margin-left: 19vw;
+        //margin-right: 45vw;
+    }
+    .homeLogo{
+        margin-left: 17vw;
+        width: 75vw;
+      //  margin-top: 7%;
+      //  margin-left: 60px;
+    }
+    .become{
+        margin-left: 20vw;
     }
 }
