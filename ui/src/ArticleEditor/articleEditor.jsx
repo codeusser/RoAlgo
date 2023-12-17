@@ -5,8 +5,11 @@ import ReactMarkdown from 'react-markdown'
 import remarkMath from 'remark-math'
 import rehypeKatex from 'rehype-katex'
 import rehypeRaw from 'rehype-raw'
+import { useCookies } from 'react-cookie';
+
 
 import 'katex/dist/katex.min.css' // `rehype-katex` does not import the CSS for you
+import RoAlgoError from '../RoAlgoError/roAlgoError'
 
 /*
 document.addEventListener('DOMContentLoaded', () => {
@@ -108,6 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 export default function ArticleEditor(args){
     const FILENAME = 'filename.md'
+    const [cookies, setCookie, removeCookie] = useCookies(['session']);
     const [content, setContent] = React.useState();
     const [fullscreen, setFullScreen] = React.useState(0);
 
@@ -125,6 +129,8 @@ export default function ArticleEditor(args){
 
     return (
         <>
+        {cookies['session'] != undefined &&
+            <>
             <img className='res' src='./resize.png' onClick={updateView}></img>
             <div className='content'>
                 {fullscreen == 0 && 
@@ -158,6 +164,13 @@ export default function ArticleEditor(args){
                     </div>
                 </div>
             </div>
+            </>
+        }
+        {cookies['session'] == undefined &&
+            <>
+            <RoAlgoError errorMessage={"Te rog logheaza-te la roalog.ro/login"}/>
+            </>
+        }
         </>
     )
 }

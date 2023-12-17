@@ -1,0 +1,216 @@
+.center11{
+    margin-top: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      justify-content: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 400px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 20px 20px 25px rgba(0,0,0,0.05);
+      padding-bottom: 50px;
+    }
+    .center11 h1{
+      text-align: center;
+      padding: 20px 0;
+      border-bottom: 1px solid silver;
+      font-family: 'Poppins', sans-serif;
+    }
+    .center11 form{
+      padding: 0 40px;
+      box-sizing: border-box;
+    }
+    form .txt_field{
+      position: relative;
+      border-bottom: 2px solid #adadad;
+      margin: 30px 0;
+    }
+    .txt_field input{
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt_field label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+      transition: .5s;
+    }
+    .txt_field span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #2691d9;
+      transition: .5s;
+    }
+    .txt_field input:focus ~ label,
+    .txt_field input:valid ~ label{
+      top: -5px;
+      color: #2691d9;
+    }
+    .txt_field input:focus ~ span::before,
+    .txt_field input:valid ~ span::before{
+      width: 100%;
+    }
+  
+    form .txt_field1{
+      position: relative;
+      border-bottom: 2px solid #adadad;
+      margin: 30px 0;
+    }
+    .txt_field1 input{
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt_field1 label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+      transition: .5s;
+    }
+    .txt_field1 span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #d7da35;
+      transition: .5s;
+    }
+    .txt_field1 input:focus ~ label,
+    .txt_field1 input:valid ~ label{
+      top: -5px;
+      color: #d7da35;
+    }
+    .txt_field1 input:focus ~ span::before,
+    .txt_field1 input:valid ~ span::before{
+      width: 100%;
+    }
+  
+    
+    form .txt_field2{
+      position: relative;
+      border-bottom: 2px solid #adadad;
+      margin: 30px 0;
+    }
+    .txt_field2 input{
+      width: 100%;
+      padding: 0 5px;
+      height: 40px;
+      font-size: 16px;
+      border: none;
+      background: none;
+      outline: none;
+    }
+    .txt_field2 label{
+      position: absolute;
+      top: 50%;
+      left: 5px;
+      color: #adadad;
+      transform: translateY(-50%);
+      font-size: 16px;
+      pointer-events: none;
+      transition: .5s;
+    }
+    .txt_field2 span::before{
+      content: '';
+      position: absolute;
+      top: 40px;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: #2691d9;
+      transition: .5s;
+    }
+    .txt_field2 input:focus ~ label,
+    .txt_field2 input:valid ~ label{
+      top: -5px;
+      color: #2691d9;
+    }
+    .txt_field2 input:focus ~ span::before,
+    .txt_field2 input:valid ~ span::before{
+      width: 100%;
+    }
+  
+    button[type="submit"]{
+      width: 100%;
+      height: 50px;
+      border: 1px solid;
+      background: #858b83;
+      border-radius: 25px;
+      font-size: 18px;
+      color: #e9f4fb;
+      font-weight: 700;
+      cursor: pointer;
+      outline: none;
+    }
+    button[type="submit"]:hover{
+      border-color: #858b83;
+      transition: .5s;
+    }
+  
+  .loading_text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 900;
+    margin-top: 50px;
+  }
+  .login--error{
+    transform: translate(10%, 0%);
+    font-family: 'Poppins', sans-serif;
+   align-self: center;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .container11{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(180deg,#ffffff, #ececec, white);
+    height: 80vh;
+    overflow: hidden;
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  .loading--spinner {
+    width: 50px;
+    height: 50px;
+    border: 10px solid #f3f3f3; /* Light grey */
+    border-top: 10px solid #383636; /* Black */
+    border-radius: 50%;
+    animation: spinner 1.5s linear infinite;
+  }

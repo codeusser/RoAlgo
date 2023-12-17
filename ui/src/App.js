@@ -10,7 +10,7 @@ import Anunturi from './Anunturi/anunuri';
 import Post from './Post/post';
 import ArticleEditor from './ArticleEditor/articleEditor';
 import Articole from './Articole/articole';
-
+import Login from './Login/login';
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
       <BrowserRouter>
         <Header></Header>
         <Routes>
+          <Route path='/login' element={<Login/>}></Route>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/home" element={<Home/>}></Route>
             <Route path='/member' element={<Member/>}></Route>

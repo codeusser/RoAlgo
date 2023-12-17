@@ -15,7 +15,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 18vh;
+    margin-top: 25vh;
     border:1px solid black;  
     width: 700px;
     background: white;
@@ -24,11 +24,13 @@
     padding-bottom: 50px;
 }
 .room{
+    //background-color: black;
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 .room h2{
+  //  background-color: black;
     padding-left: 30px;
     margin-top: 40px;
     width: 280px;
@@ -41,11 +43,13 @@
     outline: none;
     margin-top: 20px;
     color: #000000;
-    background: #ffffff;
+  //  background: #ffffff;
     cursor: pointer;
     position: relative;
     z-index: 0;
     border-radius: 12px;
+  //  background-color: black;
+
 }
 
 .ButtonMember:before {

@@ -9,18 +9,61 @@
 .logo:hover{
     width: 105px;
 }
-.container{
+.menu{
+    
+    position: absolute;
+    z-index: 1;
+    margin-top: 10px;
+    padding-left: 0px;
+    margin-right: 2rem;
+    top: 0.75rem;
+    right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.05rem;
+    height: 1.6rem;
+    transition: .10s;
+    display: none;
+   /// background-color: rgb(255, 255, 255);
+}
+.menu span{
+    border-radius: 40%;
+    height: 0.25rem;
+    width: 100%;
+    //background-color: linear-gradient(45deg,  #002bff, #daa430, #e53f3f);
+
+}
+.menu:hover{
+    height: 1.8rem;
+}
+.Red{
+    background-color: rgb(250, 100, 100);
+}
+.Yellow{
+    background-color: rgb(231, 166, 81);
+}
+.Blue{
+    background-color: rgb(106, 106, 248);
+}
+
+.container {
     text-align: right;
     display: flex;
     flex-direction: row;
     box-shadow: 1px 3px 5px rgb(169, 169, 169);
 }
-.container h3{
+.Desktop{
+    text-align: center;
+    display: flex;
+    margin-left: 0px;
+}
+.Desktop h3{
     margin-left: 1.5vw;
     margin-bottom: 20px;
     cursor: pointer;
 }
-h3 {
+.Desktop h3 {
 
     display: inline-block;
     position: relative;
@@ -28,7 +71,7 @@ h3 {
 }
 
 
-.container h3::after {
+.Desktop h3::after {
     content: '';
     position: absolute;
     width: 100%;
@@ -41,17 +84,23 @@ h3 {
     transition: transform 0.25s ease-out;
 }
 
-.container h3:hover::after {
+.Desktop h3:hover::after {
     transform: scaleX(1);
     transform-origin: bottom left;
 }
 
 @media screen and (max-width: 1240px) {
+    .Desktop{
+        display: none;
+    }
+    .menu{
+        display: flex;
+    }
     .container{
         text-align: right;
         display: flex;
         flex-direction: column;
-        width: auto;
+       width: auto;
         box-shadow: 1px 3px 5px rgb(169, 169, 169);
     }
     .logo{
@@ -63,36 +112,29 @@ h3 {
         padding-right: 2vw;
         transition: 0.5s;
     }
-    .container h3{
+    .Mobile h3{
         font-size: 14px;
         text-align: center;
         margin: 0px;
         padding-top: 1vh;
         padding-bottom: 1vh;
-     //   padding-left: 2px;
-    //    padding
     }
-    .container h3:hover{
+    .Mobile h3:hover{
         background-color: rgb(211, 211, 211);
     }
-    .container h3::after {
-      //  content: '';
-      //  position: absolute;
-       // width: 100%;
-       // transform: scaleX(0);
-      //  height: 2px;
+    .Mobile h3::after {
         bottom: 0;
         left: 0;
         background-color: rgb(250, 250, 250);
-     //  background-color: black;
-      //  transform-origin: bottom right;
-       // transition: transform 0.25s ease-out;
     }
     
-    .container h3:hover::after {
+    /*
+    .Mobile h3:hover::after {
         //background-color: rgb(250, 250, 250);
         //transform: scaleX(1);
        // transform-origin: bottom left;
     }
+    */
     
 }
+

@@ -1,0 +1,7 @@
+create table admin (
+    id int not null auto_increment primary key,
+    username varchar(255),
+    password varchar(255),
+    session_id int,
+    foreign key (session_id) references session(id)
+)

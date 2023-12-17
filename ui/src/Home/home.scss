@@ -19,7 +19,8 @@
     align-items: center;
   //  position: relative;
   //  margin-left: 15vw;
-    margin-top: 7vh;
+    margin-top: 17vh;
+    margin-bottom: 7vh;
     justify-content: space-around;
     //transform: translate(-50%, -50%);
 }
@@ -83,12 +84,12 @@ a:hover{
     }
       .leftside h4{
         
-          width: 80vw;
-          margin-left: 7vw;
+          width: 74vw;
+         // margin-left: 7vw;
          // margin-right: 45vw;
       }
       .become{
-        width: 20vw;
+        width: 30vw;
         height: 40px;
         border: 2px solid;
         background: #ffffff;
@@ -98,56 +99,11 @@ a:hover{
         font-weight: 700;
         cursor: pointer;
         margin-bottom: 40px;
-        margin-left: 7vw;
 
         transition: .5s;
     }
     .homeLogo{
         margin-right: 20vw;
         width: 80vw;
-    }
-}
-
-@media screen and (max-height:760px){
-    .Hcontainer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      //  position: relative;
-        //width: 10vw;
-        justify-content: space-around;
-        padding-top: 0vh;
-       // padding-bottom: 20px;
-        //right: 100vw;
-        text-align: center;
-      //  margin-left: 45vw;
-      //  margin-right: 45vw;
-       // transform: translate(-55%, -30%);
-    }
-      .leftside h4{
-        
-          width: 60vw;
-          margin-left: 7vw;
-          //margin-right: 45vw;
-          margin-bottom: 5vh;
-      }
-      .become{
-        width: 20vw;
-        height: 40px;
-        border: 2px solid;
-        background: #ffffff;
-        border-radius: 25px;
-        font-size: 11px;
-        color: #000000;
-        font-weight: 700;
-        cursor: pointer;
-        margin-bottom: 40px;
-        margin-left: 7vw;
-
-        transition: .5s;
-    }
-    .homeLogo{
-        margin-right: 20vw;
-        width: 50vw;
     }
 }

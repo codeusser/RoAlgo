@@ -39,27 +39,29 @@ export default function Articole(){
              <div className='center'>
                 <h1> <u>Articole Stiintifice </u> </h1>
             </div>
-             <h1>Nivel: incepatori</h1>
-             <div className='carduri'>
-                {articolesIncepatori.map((articol) => (
-                    <CardA url = {articol.url} author= {articol.author} title={articol.name}></CardA>
-                    ))
-                }
-             </div>
-             <h1>Nivel: intermediar</h1>
-             <div className='carduri'>
-                {articolesMedii.map((articol) => (
-                    <CardA url = {articol.url} author= {articol.author} title={articol.name}></CardA>
-                    ))
-                }
-             </div>
-             <h1>Nivel: avansat</h1>
-             <div className='carduri'>
-                {articolesAvansat.map((articol) => (
-                    <CardA url = {articol.url} author= {articol.author} title={articol.name}></CardA>
-                    ))
-                }
-             </div>
+            <div className='CenterMobile'>
+                <h1>Nivel: incepatori</h1>
+                <div className='carduri'>
+                    {articolesIncepatori.map((articol) => (
+                        <CardA url = {articol.url} author= {articol.author} title={articol.name}></CardA>
+                        ))
+                    }
+                </div>
+                <h1>Nivel: intermediar</h1>
+                <div className='carduri'>
+                    {articolesMedii.map((articol) => (
+                        <CardA url = {articol.url} author= {articol.author} title={articol.name}></CardA>
+                        ))
+                    }
+                </div>
+                <h1>Nivel: avansat</h1>
+                <div className='carduri'>
+                    {articolesAvansat.map((articol) => (
+                        <CardA url = {articol.url} author= {articol.author} title={articol.name}></CardA>
+                        ))
+                    }
+                </div>
+            </div>
         </>
     )
 }
