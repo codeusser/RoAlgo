@@ -1,39 +1,63 @@
 import { useNavigate } from 'react-router-dom'
 import './home.scss'
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import { loadSlim } from "tsparticles-slim";
+import { useCallback } from "react";
+import ShowNice from '../ShowNice/ShowNice';
+
+function CardProjects(props){
+    return (
+        <>
+            <div className='body'>
+                <h1>{props.comp}</h1>
+                <p>{props.description}</p>
+            </div>
+        </>
+    )
+}
 
 
 export default function Home(){
     const navigate = useNavigate();
+    const particlesInit = async (main) => {
+        console.log(main);
+        await loadFull(main);
+      };
+    const particlesLoaded = useCallback(async container => {
+        await console.log(container);
+    }, []);
     function becomeMember(){
     //    window.location.replace('https://codefrontend.com');
+        
        navigate('/member');
+    }
+    function goToOJI(){
+        window.location.replace('https://kilonova.ro/problem_lists/452');
     }
     return (
         <>
-            <div classname="Center">
-                <div className='Hcontainer'> 
-                    <img src = 'homePage.jpg' className="homeLogo"/>
-                    <div className='leftside'>
-                        <h4>RoAlgo este un proiect care a fost demarat de Stefan Dăscalescu cu scopul de a uni comunitatea de programare competitivă din România, în același timp conectarea studenților pasionati de aceasi disciplina.
-
-                        <br/>
-                        <br/>
-                        Serverul nostru are în prezent peste 1000 de membri din toată România și, pe lângă activități precum postarea problemelor și ajutarea oamenilor să devină mai buni la programare împreună, organizăm și concursuri și lucrăm în proiecte care includ următoarele:
-                        <br/>
-                        <br/>
-                        Încărcarea regulată a problemelor noi și restaurarea datelor de la vechea Olimpiada Română și probleme de concurs pe platforma noastră parteneră, <a href='https://kilonova.ro/ '>https://kilonova.ro/ </a>.Am încărcat până acum toate problemele date începând cu anul 2000 la olimpiadele județene și naționale din România, plus multe alte probleme.
-                        <br/>
-                        <br/>
-                        Organizam periodic concursuri cu probleme create de oamenii de pe serverul nostru, concursuri care sunt coordonate de membri seniori ai serverului.
-                        <br/>
-                        <br/>
-                        De asemenea, colaborăm cu alte inițiative din România pentru a extinde acoperirea comunității noastre către fiecare elev interesat, inclusiv concursuri internaționale, activități de voluntariat pentru elevii școlii, activități care îi pregătesc să fie membri valoroși ai comunității noastre și potențiali viitori tutori care lucrează împreună cu noi. direct.
-                        
-                        
-                        </h4>
-                        <button className='become' onClick={becomeMember}> Devino membru </button>
+            <div className='Homepage'>
+                <div className='P1'>
+                    <p>Cine suntem?</p>
+                    <h3>RoAlgo este cea mai mare comunitate românească de algoritmică, cu aproape 2000 de membri pe server. Printre altele, ne propunem să facem informatica mai distractivă, mai plăcută și să învățați de la cei mai buni și nu numai cât mai multe lucruri, atât legate de algoritmică și nu numai. Aici organizăm concursuri, facem proiecte frumoase împreună și devenim tot mai buni. </h3>
+                    <button className='become' onClick={becomeMember}> Devino membru </button>
+                </div>
+                <div className='P2'>
+                    <p>Proiectele noastre</p>
+                    <div className='prs'>
+                        <CardProjects comp="OJI" description="am incarcat toate problemele de la olimpiada judeteana de informatica romana"></CardProjects>    
+                        <CardProjects comp="ONI" description="am incarcat toate problemele de la olimpiada nationala de informatica romana"></CardProjects>        
+                        <CardProjects comp="Baraj Juniori" description="am incarcat toate problemele de la barajul de selectie pentru lotul romaniei de juniori"></CardProjects>        
+                        <CardProjects comp="Baraj Seniori" description="am incarcat toate problemele de la barajul de selectie pentru lotul romaniei de seniori"></CardProjects>        
+                    </div>
+                    <div className='prs1'>
+                        <CardProjects comp="Lot Juniori" description="am incarcat toate problemele de la Lotul de Juniori al romaniei"></CardProjects>    
+                        <CardProjects comp="Lot Seniori" description="am incarcat toate problemele de la Lotul de Seniori al romaniei"></CardProjects>        
+                        <CardProjects comp="RoAlgo Contests" description="Organizarea a 8 concursuri marca RoAlgo in care elevii pasionati pot concura, dar si distra rezolvand un set de probleme de algoritmica"></CardProjects>        
                     </div>
                 </div>
+                <ShowNice></ShowNice>
             </div>
         </>
     )
