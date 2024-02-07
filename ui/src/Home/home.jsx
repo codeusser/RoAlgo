@@ -17,6 +17,18 @@ function CardProjects(props){
     )
 }
 
+function ContribuitorsCards(props){
+    return (
+        <>
+            <div className='contribuitors'>
+                <img src={props.src}></img>
+                <h1>{props.name}</h1>
+                <h3>{props.role}</h3>
+            </div>
+        </>
+    )
+}
+
 
 export default function Home(){
     const navigate = useNavigate();
@@ -57,6 +69,21 @@ export default function Home(){
                         <CardProjects comp="RoAlgo Contests" description="Organizarea a 8 concursuri marca RoAlgo in care elevii pasionati pot concura, dar si distra rezolvand un set de probleme de algoritmica"></CardProjects>        
                     </div>
                 </div>
+                <div className="P3">
+                    <p>Partenerii si sponsorii nostri</p>
+                    <img src="vasiluta.jpeg"></img>
+
+                </div>
+                <div className="P4">
+                    <p>Echipa RoAlgo</p>
+                    <div className="contribuitorsContanier">
+                        <ContribuitorsCards src="./pfp.jpg" role="developer" name="Nistor Vlad Andrei"></ContribuitorsCards>
+                        <ContribuitorsCards src="./pfp.jpg" role="developer, propunator si editor" name="David Curca"></ContribuitorsCards>
+                        <ContribuitorsCards src="./pfp.jpg" role="coordonator, sponsor, fondator, propunator si editor" name="Stefan Dascalescu"></ContribuitorsCards>
+                        <ContribuitorsCards src="./pfp.jpg" role="propunator si editor" name="Luca Muresean"></ContribuitorsCards>
+                    </div>
+                </div>
+
                 <ShowNice></ShowNice>
             </div>
         </>

@@ -29,12 +29,12 @@ export default function ShowNice(props){
                 },
                 "style":{
                     "position": "absolute",
-                    "width": "100vw",
-                    "height": "300vh"
+                    "width": "98vw",
+                    "min-height": "800vh"
                 },
                 "particles": {
                     "number": {
-                        "value": 25,
+                        "value": 35,
                         "density": {
                             "enable": false,
                             "value_area": 800

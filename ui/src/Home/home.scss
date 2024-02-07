@@ -27,7 +27,7 @@
 
 .Homepage{
     height: 100vh;
-    width: 100vw;
+    width: 90vw;
 }
 
 .P1{
@@ -55,6 +55,49 @@
 .P2 p{
     font-size: 60px;
 }
+
+.P3{
+    position: absolute;
+    z-index: 2;
+    width: 40vw;
+    align-items: center;
+    margin-left: 30vw;
+    margin-top: 280vh;
+
+    margin-bottom: 7vh;
+}
+
+.P3 img{
+    cursor: pointer;
+    margin-top: 12vh;
+    width: 30vw;
+    border: 4px solid black;
+    border-radius: 25px;
+    transition: .5s;
+    margin-left:3vw;
+    
+}
+.P3 img:hover{
+    border: 4px solid rgb(95, 162, 213);
+}
+
+.P3 p{
+    font-size: 60px;
+}
+
+.P4{
+    position: absolute;
+    z-index: 2;
+    width: 90vw;
+    align-items: center;
+    margin-left: 5vw;
+    margin-top: 400vh;
+    margin-bottom: 7vh;
+}
+.P4 p{
+    font-size: 60px;
+}
+
 .body{
     //height: 100px;
     position: relative;
@@ -68,6 +111,8 @@
     transition: .5s;
     margin-bottom: 24px;
     background-color: #ffffff;
+    cursor: pointer;
+
     margin-right: 5vw;
 }
 .body p{
@@ -95,13 +140,57 @@
    // align-items: center;
     flex-direction: row;
 }
+.contribuitors{
+    //height: 100px;
+    position: relative;
+    width: 15vw;
+    cursor: pointer;
+    min-height: 15vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    border: 4px solid black;
+    border-radius: 25px;
+    transition: .5s;
+    margin-bottom: 24px;
+    background-color: #ffffff;
+    margin-right: 5vw;
+}
+
+.contribuitors:hover{
+    border: 4px solid rgb(95, 162, 213);
+}
+
+.contribuitors p{
+    width: 10.5vw;
+    font-size: 25px;
+}
+
+
+.contribuitors h1{
+    color: rgb(241, 87, 87);
+    margin-right: 2vw;
+    font-size: 2vw;
+}
+.contribuitors img{
+    margin-top: 2vh;
+    width: 10vw;
+}
+
+.contribuitorsContanier{
+   // position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
 
 
 
 @media screen and (max-width: 1300px) {
     .Homepage{
         height: 100vh;
-        width: 100vw;
+        width: 80vw;
     }
     
     .P1{
@@ -119,7 +208,7 @@
     .P2{
         position: absolute;
         z-index: 2;
-        width: 100vw;
+        width: 90vw;
         align-items: center;
         margin-left: 5vw;
         margin-top: 100vh;
@@ -170,12 +259,100 @@
         flex-direction: row;
         flex-wrap: wrap;
     }
+    .P3{
+        position: absolute;
+        z-index: 2;
+        width: 40vw;
+        align-items: center;
+        margin-left: 30vw;
+        margin-top: 450vh;
+    
+        margin-bottom: 7vh;
+    }
+
+    .P3 img{
+        cursor: pointer;
+        margin-top: 12vh;
+        width: 30vw;
+        border: 4px solid black;
+        border-radius: 25px;
+        transition: .5s;
+        margin-left:3vw;
+        
+    }
+    .P3 img:hover{
+        border: 4px solid rgb(95, 162, 213);
+    }
+    
+    .P3 p{
+        font-size: 60px;
+    }
+    
+    .P4{
+        position: absolute;
+        z-index: 2;
+        width: 90vw;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 550vh;
+        margin-bottom: 7vh;
+    }
+    .P4 p{
+        font-size: 60px;
+    }
+
+    .contribuitors{
+        //height: 100px;
+        position: relative;
+        width: 30vw;
+        cursor: pointer;
+        min-height: 15vh;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        flex-direction: column;
+        border: 4px solid black;
+        border-radius: 25px;
+        transition: .5s;
+        margin-bottom: 24px;
+        margin-left: 27vw;
+        background-color: #ffffff;
+        margin-right: 5vw;
+    }
+    
+    .contribuitors:hover{
+        border: 4px solid rgb(95, 162, 213);
+    }
+    
+    .contribuitors p{
+        width: 10.5vw;
+        font-size: 25px;
+    }
+    
+    
+    .contribuitors h1{
+        color: rgb(241, 87, 87);
+        margin-right: 2vw;
+        font-size: 2vw;
+    }
+    .contribuitors img{
+        margin-top: 2vh;
+        width: 10vw;
+    }
+    
+    .contribuitorsContanier{
+       // position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
     
 }
 @media screen and (max-width: 600px) {
     .Homepage{
         height: 100vh;
-        width: 100vw;
+        width: 70vw;
     }
     
     .P1{
@@ -193,7 +370,7 @@
     .P2{
         position: absolute;
         z-index: 2;
-        width: 100vw;
+        width: 85vw;
         align-items: center;
         margin-left: 5vw;
         margin-top: 100vh;
@@ -241,6 +418,95 @@
         margin-left: 5vw;
         display: flex;
         flex-direction: column;
+    }
+
+
+    .P3{
+        position: absolute;
+        z-index: 2;
+        width: 40vw;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 550vh;
+        margin-bottom: 7vh;
+    }
+
+    .P3 img{
+        cursor: pointer;
+        margin-top: 12vh;
+        margin-left: 10vw;
+        width: 50vw;
+        border: 4px solid black;
+        border-radius: 25px;
+        transition: .5s;
+        margin-left:3vw;
+        
+    }
+    .P3 img:hover{
+        border: 4px solid rgb(95, 162, 213);
+    }
+    
+    .P3 p{
+        font-size: 60px;
+    }
+    
+    .P4{
+        position: absolute;
+        z-index: 2;
+        width: 90vw;
+        align-items: center;
+        margin-left: 5vw;
+        margin-top: 650vh;
+        margin-bottom: 7vh;
+    }
+    .P4 p{
+        font-size: 60px;
+    }
+
+    .contribuitors{
+        //height: 100px;
+        position: relative;
+        width: 50vw;
+        cursor: pointer;
+        min-height: 15vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        border: 4px solid black;
+        border-radius: 25px;
+        transition: .5s;
+        text-align: center;
+        margin-bottom: 24px;
+        margin-left: 17vw;
+        background-color: #ffffff;
+        margin-right: 5vw;
+    }
+    
+    .contribuitors:hover{
+        border: 4px solid rgb(95, 162, 213);
+    }
+    
+    .contribuitors p{
+        width: 10.5vw;
+        font-size: 25px;
+    }
+    
+    
+    .contribuitors h1{
+        color: rgb(241, 87, 87);
+        margin-right: 10vw;
+        font-size: 6vw;
+    }
+    .contribuitors img{
+        margin-top: 2vh;
+        width: 30vw;
+    }
+    
+    .contribuitorsContanier{
+       // position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
     }
     
 }
