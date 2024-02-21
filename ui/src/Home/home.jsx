@@ -47,6 +47,7 @@ export default function Home(){
     function goToOJI(){
         window.location.replace('https://kilonova.ro/problem_lists/452');
     }
+    
     return (
         <>
             <div className='Homepage'>

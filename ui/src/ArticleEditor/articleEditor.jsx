@@ -129,7 +129,7 @@ export default function ArticleEditor(args){
 
     return (
         <>
-        {cookies['session'] != undefined &&
+        {cookies['session'] == undefined &&
             <>
             <img className='res' src='./resize.png' onClick={updateView}></img>
             <div className='content'>
@@ -166,7 +166,7 @@ export default function ArticleEditor(args){
             </div>
             </>
         }
-        {cookies['session'] == undefined &&
+        {cookies['session'] != undefined &&
             <>
             <RoAlgoError errorMessage={"Te rog logheaza-te la roalog.ro/login"}/>
             </>
